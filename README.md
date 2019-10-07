@@ -34,4 +34,4 @@ https://symfony-4-simple-cart.herokuapp.com
 
 If you need help or encounter some problem, please submit a new issue. I will be more than happy to help.
 
-Pixweber
+Pixweber# cart
