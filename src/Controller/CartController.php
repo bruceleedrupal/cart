@@ -53,7 +53,7 @@ class CartController extends AbstractController {
                 );
             }
         }
-	dump($cartItems);
+
 
         return $this->render('cart/index.html.twig', [
             'controller_name' => 'CartController',
@@ -107,7 +107,7 @@ class CartController extends AbstractController {
     /**
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
-     * @Route("cart/removeItem/{productId}", name="cart_remove_item", methods={"POST"})
+     * @Route("cart/removeItem/{productId}", name="cart_remove_item", methods={"POST","GET"})
      */
     public function removeItem(Request $request) {
         $productId = $request->get('productId');

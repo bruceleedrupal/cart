@@ -29,8 +29,8 @@
                 {% for cartItem in cartItems %}
                     <tr class="cart-item" data-product-id="{{ cartItem.productId }}" data-price="{{ cartItem.productPrice }}" data-quantity="{{ cartItem.quantity }}" data-total="{{ cartItem.total }}">
                         <td>
-                            <form method="post" action="{{ path('cart_remove_item', {'productId': cartItem.productId}) }}">
-                                <button class="btn btn-sm font-weight-bold pt-0 pb-0 text-danger" title="Remove item">x</button>
+
+                                <a class="btn btn-sm font-weight-bold pt-0 pb-0 text-danger" href="{{ path('cart_remove_item', {'productId': cartItem.productId}) }}">x</a>                          
                                 <img src="{{ cartItem.productImage }}" height="40"/>
                             </form>
                         </td>
@@ -104,4 +104,3 @@
     </div>
 </div>
 {% endblock %}
-
