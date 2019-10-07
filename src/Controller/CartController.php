@@ -53,6 +53,7 @@ class CartController extends AbstractController {
                 );
             }
         }
+	dump($cartItems);
 
         return $this->render('cart/index.html.twig', [
             'controller_name' => 'CartController',
